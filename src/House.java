@@ -1,8 +1,21 @@
 
 public class House {
-	private boolean isRent;
-	private int rent;
 	private int moraleModifier;
-	private int price;
+
+	public House(int moraleModifier) {
+		super();
+		this.setMoraleModifier(moraleModifier);
+	}
+
+	public int getMoraleModifier() {
+		return moraleModifier;
+	}
+
+	public void setMoraleModifier(int moraleModifier) {
+		this.moraleModifier = moraleModifier;
+	}
+
+	
+	
 
 }
