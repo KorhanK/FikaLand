@@ -17,7 +17,7 @@ public class Player {
 			Education education, String[] friends, int score, House house,
 			Swedish swedishLevel) {
 		super();
-		this.money = money;
+		this.setMoney(money);
 		this.morale = morale;
 		this.luck = luck;
 		this.knowsEnglish = knowsEnglish;
@@ -30,6 +30,14 @@ public class Player {
 		this.house = house;
 		this.swedishLevel = swedishLevel;
 	}
+	public int getMoney() {
+		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+	
 	
 	
 	
