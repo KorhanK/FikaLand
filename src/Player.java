@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 
 public class Player {
+	private String name;
+	
 	private int money;
 	private int morale;
 	private int luck;
@@ -18,6 +20,7 @@ public class Player {
 	private int englishLevel;
 	private String dating = null;
 	private int workingForMonths;
+	private Time time;
 	
 	public Player(int money, int morale, int luck, int englishLevel, int technicalEducation, int socialEducation) {
 		//super();
@@ -30,6 +33,7 @@ public class Player {
 		this.technicalEducation = technicalEducation;
 		this.socialEducation = socialEducation;
 		friends = new ArrayList<String>();
+		time = new Time();
 	}
 	
 	
@@ -69,6 +73,41 @@ public class Player {
 		if (morale < 0)
 			morale=0;
 	}
+
+
+	public int getTechnicalEducation() {
+		return technicalEducation;
+	}
+
+
+	public void setTechnicalEducation(int technicalEducation) {
+		this.technicalEducation = technicalEducation;
+	}
+
+
+	public int getSocialEducation() {
+		return socialEducation;
+	}
+
+
+	public void setSocialEducation(int socialEducation) {
+		this.socialEducation = socialEducation;
+	}
+
+
+	public int getSwedishLevel() {
+		return swedishLevel;
+	}
+
+
+	public void setSwedishLevel(int swedishLevel) {
+		this.swedishLevel = swedishLevel;
+	}
+
+	public void eat(){
+		time.eatingThisTurn();
+	}
+	
 
 	
 
