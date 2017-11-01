@@ -1,3 +1,4 @@
+package Model;
 
 public class House {
 	private int moraleModifier;

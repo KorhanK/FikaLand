@@ -1,3 +1,4 @@
+package Model;
 import java.util.ArrayList;
 
 
@@ -21,6 +22,7 @@ public class Player {
 	private String dating = null;
 	private int workingForMonths;
 	private Time time;
+	private ArrayList<String> achievements;
 	
 	public Player(int money, int morale, int luck, int englishLevel, int technicalEducation, int socialEducation) {
 		//super();
@@ -34,6 +36,7 @@ public class Player {
 		this.socialEducation = socialEducation;
 		friends = new ArrayList<String>();
 		time = new Time();
+		achievements = new ArrayList<String>();
 	}
 	
 	
